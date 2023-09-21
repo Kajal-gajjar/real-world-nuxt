@@ -16,3 +16,4 @@ artifacts:
     - "static/**/*"
     - ".platform/**/*"
     - ".ebextensions/**/*"
+    - "Dockerfile"
