@@ -11,6 +11,7 @@ phases:
 artifacts:
   files:
     - "package.json"
+    - "package-lock.json"
     - "nuxt.config.js"
     - ".nuxt/**/*"
     - "static/**/*"
