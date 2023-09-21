@@ -15,5 +15,5 @@ artifacts:
     - ".nuxt/**/*"
     - "static/**/*"
     - ".platform/**/*"
-    - ".ebextensions/**/*"
     - "Dockerfile"
+    
