@@ -1,4 +1,4 @@
-FROM node:lts-alpine3.17
+FROM node:14-alpine
 
 # create destination directory
 RUN mkdir -p /usr/src/nuxt-app
