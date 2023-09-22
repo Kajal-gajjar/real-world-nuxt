@@ -5,6 +5,7 @@ phases:
     commands:
       - npm install
   build:
+    timeout: 600
     commands:
       - npm run build
 
