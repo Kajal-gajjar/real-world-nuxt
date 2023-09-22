@@ -18,3 +18,4 @@ artifacts:
     - ".platform/**/*"
     - ".ebextensions/**/*"
     - "Dockerfile"
+    - "plugins/**/*"
