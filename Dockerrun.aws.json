@@ -1,0 +1,7 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "962512571654.dkr.ecr.ap-south-1.amazonaws.com/nuxt-demo"
+  },
+  "Ports": [{ "ContainerPort": 5000 }]
+}
