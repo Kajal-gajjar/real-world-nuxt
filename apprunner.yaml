@@ -1,0 +1,10 @@
+version: 1.0
+runtime: node16
+build:
+  commands:
+    pre_build:
+      - npm install
+    build:
+      - npm run build 
+run: 
+  command: npm run start
