@@ -5,7 +5,6 @@ phases:
     commands:
       - npm install
   build:
-    timeout: 600
     commands:
       - npm run build
 
@@ -17,6 +16,5 @@ artifacts:
     - ".nuxt/**/*"
     - "static/**/*"
     - ".platform/**/*"
-    - ".ebextensions/**/*"
     - "Dockerfile"
     - "plugins/**/*"
