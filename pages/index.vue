@@ -6,7 +6,7 @@
         real-world-nuxt
       </h1>
       <h2 class="subtitle">
-        Welcome to the View UI + Nuxt.js template
+        Welcome to the View UI + Nuxt.js template demo
       </h2>
       <div class="links">
         <Button type="primary" target="_blank" rel="noopener noreferrer" to="https://nuxtjs.org/">
