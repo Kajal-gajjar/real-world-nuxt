@@ -1,23 +1,28 @@
-# Use Node.js 18 image
-FROM node:18
+FROM node:lts-alpine3.17
 
-# Create destination directory
+# create destination directory
 RUN mkdir -p /usr/src/nuxt-app
 WORKDIR /usr/src/nuxt-app
 
-# Update and install dependencies using apt-get
-RUN apt-get update && apt-get upgrade -y && apt-get install -y git
+# update and install dependency
+RUN apk update && apk upgrade
+RUN apk add git
 
-# Copy the app, note .dockerignore
+# copy the app, note .dockerignore
 COPY . /usr/src/nuxt-app/
 RUN npm install
 
-# Build necessary, even if no static files are needed,
+# build necessary, even if no static files are needed,
 # since it builds the server as well
 RUN npm run build
 
-# Expose 5000 on container
+# expose 5000 on container
 EXPOSE 5000
 
-# Start the app
+# set app serving to permissive / assigned
+ENV NUXT_HOST=0.0.0.0
+# set app port
+ENV NUXT_PORT=5000
+
+# start the app
 CMD [ "npm", "start" ]
